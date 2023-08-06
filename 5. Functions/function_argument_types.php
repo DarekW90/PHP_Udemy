@@ -40,6 +40,20 @@
     echo (add3(56,12)."<br>");
     echo (add3(56,12.456)."<br>");
     echo (add3(56.456,12.456)."<br>");
+    echo ("<br>");
+    echo ("<br>");
+    
+        // wartość null able ?string
+
+
+    function printData(?string $str) : void {
+        echo($str."<br>");
+    }
+
+    printData ("Hello World!");
+    printData (null);
+
+
     ?>
 </body>
 </html>
