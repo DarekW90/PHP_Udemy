@@ -16,8 +16,12 @@
         echo("Hello World 5!");*/
         echo("Hello World 6!");
 
+    
+
+        function add($a, $b) {
+            return $a + $b;
+    }
+
     ?>
-
-
 </body>
 </html>
