@@ -16,29 +16,26 @@
         2. Stwórz instancję klasy i przeprowadź przykładowe operacje matematyczne
     */
 
-    class smartphone {
+    class math {
 
         public function __construct(
-            private string $brand,
-            private string $model,
-            private float $screenSize,
-            private int $memorySize,
+            private int $a,
+            private int $b,
+            
         ) {
-            $this -> brand = $brand;
-            $this -> model = $model;
-            $this -> screenSize = $screenSize;
-            $this -> memorySize = $memorySize;
+            $this -> add = $a + $b;
+            $this -> substract = $a - $b;
+            $this -> divide = $a / $b;
+            $this -> pow = $a**$b;
         }
 
         public function showData() {
-            echo("Brand: ".$this->brand.", model: ".$this->model.", screen size: ".$this->screenSize.", memory size: ".$this->memorySize . "<br>");
+            echo("adding: ".$this->add.",<br> substracting: ".$this->substract.",<br> dividing: ".$this->divide.",<br> powering: ".$this->pow . "<br>");
         }
     }
 
-    $phone1 = new smartphone("Nokia","3310", 4.5, 5000);
-    $phone2 = new smartphone("Xiaomi","Redmi Note 10", 9.2, 32000);
-    $phone1->showData();
-    $phone2->showData();
+    $math = new math(3,5);
+    $math->showData();
 
 
     ?>
