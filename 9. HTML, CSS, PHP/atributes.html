@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        jeśli nazwa atrybutu jest taka sama jak atrybut to można pominąć atrybutowanie np 
+        === reversed="reversed" === 
+        można używać samego 
+        === "reversed" ===
+    -->
+    <ol reversed="reversed" start = "10" type = "1">
+        <li>Dodge</li>
+        <li value = "20">BMW</li>
+        <li>Merc</li>
+        <li>GMC</li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <input type="text" disabled value="Przykładowy tekst">
+    <input type="text" disabled="disabled" value="Przykładowy tekst">
+    <!--
+        używając cudzysłowia stosować cudzysłów do samego końca
+        używając apostrofu - stosować apostrof do samego końca
+
+        nie powinno się mieszać cudzysłowia z apostrofem
+        można - nie powoduje to błędu - lecz wygląda nie estetycznie
+    -->
+    <input type="button" value="Submit">
+    <input type='button' value='Submit'>
+
+    <!-- uwaga, ważne by były " " lub ' '-->
+    <input type='button' value=Zapisz plik>
+    <input type='button' value="Zapisz plik">
+
+    <!-- własne atrybuty zapisywać z atrybutem 
+        data-podaj-własną-nazwę
+    -->
+    <img src="" alt=""  data-galery-name="wakacje" 
+                        galery-name="wakacje">
+</body>
+</html>
