@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.php" method="post"
+        enctype="multipart/form-data">
+        <p>
+            User: <input type="username">
+        </p>
+        <p>
+            Email: <input type="email">
+        </p>
+        <p>
+            Number: <input type="number" min="10" max="100"> 
+        </p>
+        <p>
+            Hidden: <input type="hidden" name="data-id" value="12345">
+        </p>
+        <p>
+            <!-- wymagany specjalnyu atrybut enctype -->
+            File: <input type="file" name="pictures" accept="image/png, image/gif">
+        </p>
+        <p>
+            <textarea name="description" id="description" cols="40" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="radio" name="color" value="red" id="red">
+            <label for="red">Czerwony</label>
+            <input type="radio" name="color" value="green" id="green">
+            <label for="green">Zielony</label>
+            <input type="radio" name="color" value="blue" id="blue">
+            <label for="blue">Niebieski</label>
+        </p>
+        <p>
+            <input type="checkbox" name="hobby" id="sport">
+            <label for="sport">Sport</label>
+            <input type="checkbox" name="hobby" id="cinema">
+            <label for="cinema">Kino</label>
+            <input type="checkbox" name="hobby" id="cars">
+            <label for="cars">Samochody</label>
+        </p>
+        <p>
+            <select name="color3" id="color3">
+                <option value=" red">Czerwony</option>
+                <option value=" green">Zielony</option>
+                <option value=" blue">Niebieski</option>
+                    <optgroup label="Niestandardowe kolory">
+                        <option value="yellow">Zółty</option>
+                        <option value="silver">Srebrny</option>
+                    </optgroup>
+            </select>
+        </p>
+
+
+        <button type="submit">Wyślij</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        get:
+        https://example.com/action.php?username=Kasia&passoword=admin1234
+    -->
+    <form action="action.php" method="post" autocomplete="off">
+        <p>
+            <label for="usernane">Nazwa użytkownika:</label>
+            <input id="username" type="text" name="username" value="Darek"></p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Wpisz hasło"></p>
+        <p>
+            <label for="country">Kraj:</label>
+            <input id="country" type="text" name="country" placeholder="Wpisz kraj" minlength="3" maxlength="10"></p>
+        <p><button type="reset">Resetuj</button></p>
+        <p><button type="submit">Wyślij</button></p>
+    </form>
+</body>
+</html>
